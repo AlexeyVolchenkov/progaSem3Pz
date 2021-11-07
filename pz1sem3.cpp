@@ -60,15 +60,14 @@ public:
     }
     void Sum(const MasClass& obj)
     {
-        cout << endl;
-        for (int i = 0; i < len; i++)
+        for (int i = 0; i < len && i < obj.len; i++)
         {
             arr[i] += obj.arr[i];
         }
     }
     void Sub(const MasClass& obj)
     {
-        for (int i = 0; i < len; i++)
+        for (int i = 0; i < len && i < obj.len; i++)
         {
             arr[i] -= obj.arr[i];
         }
