@@ -6,9 +6,9 @@ class MasClass
 {
 
     int len;
+    int* arr;
     int* newArray;
 public:
-    int* arr;
     MasClass(int length)
     {
         len = length;
