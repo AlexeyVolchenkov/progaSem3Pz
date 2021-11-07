@@ -7,13 +7,11 @@ class MasClass
 
     int len;
     int* arr;
-    int* newArray;
 public:
     MasClass(int length)
     {
         len = length;
         arr = new int[length];
-        newArray = new int[length + 1];
     }
     MasClass(const MasClass& obj)
     {
@@ -86,6 +84,7 @@ public:
     {
         if (value >= -100 && value <= 100)
         {
+            int* newArray = new int[len + 1];
             for (int i = 0; i < len; i++)
             {
                 newArray[i] = arr[i];
@@ -111,7 +110,6 @@ int main()
     MasClass arr1(2), arr2(2);
     arr1.random();
     arr2.random();
-    arr1.Sum(arr2);
-    arr1.Sub(arr2);
+    arr1.push_back(2);
     return 0;
 }
